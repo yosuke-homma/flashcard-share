@@ -1,24 +1,17 @@
-# README
+# Flashcard Share 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要 / Summary
+単語カードの作成・共有を行うアプリです。</br>
+This is an application that users can make their flashcards and share them with others to learn languages. 
 
-Things you may want to cover:
+## 開発環境 / Versions
+・ruby 2.6.8 ・Rails 6.1.4.4 ・Bootstrap 5.0.2
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## インストール / Installation
+$ cd [ダウンロードしたいディレクトリ名]
+$ git clone git@github.com:yosuke-homma/flashcard-share.git
+$ cd flashcard-share/
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails server
