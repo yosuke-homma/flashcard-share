@@ -8,6 +8,7 @@ This is an application that users can make their flashcards and share them with 
 ・ruby 2.6.8 ・Rails 6.1.4.4 ・Bootstrap 5.0.2
 
 ## インストール / Installation
+```
 $ cd [ダウンロードしたいディレクトリ名]
 $ git clone git@github.com:yosuke-homma/flashcard-share.git
 $ cd flashcard-share/
@@ -15,3 +16,4 @@ $ bundle install
 $ rails db:create
 $ rails db:migrate
 $ rails server
+```
