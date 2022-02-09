@@ -1,8 +1,8 @@
 require "test_helper"
 
 class PreloginPagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get home" do
-    get prelogin_pages_home_url
+  test "should get root" do
+    get root_url
     assert_response :success
   end
 
