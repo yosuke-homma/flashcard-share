@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'prelogin_pages#home'
   get '/about', to: 'prelogin_pages#about'
   get  '/help', to: 'prelogin_pages#help'
