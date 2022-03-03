@@ -12,4 +12,5 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false } #メールアドレスの大文字小文字を区別せずに一意性を検証するため。
+  has_many :cards, dependent: :destroy
 end

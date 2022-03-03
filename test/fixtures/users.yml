@@ -7,3 +7,7 @@
 one:
   name: The Dude
   email: dude@example.com
+
+two:
+  name: The Man
+  email: man@example.com
