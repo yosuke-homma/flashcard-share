@@ -54,4 +54,15 @@ class UserTest < ActiveSupport::TestCase
     @user.save
     assert_equal mixed_case_email.downcase, @user.reload.email
   end
+
+  test "associated cards should be destroyed" do
+    @user.save
+    @user.cards.create!(word: "Word", type: "", 
+      meaning: "a single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.",
+      example: "I don't like the word unofficial.",
+      user_id: @user.id)
+    assert_difference 'Card.count', -1 do
+      @user.destroy
+    end
+  end
 end
