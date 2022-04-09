@@ -13,4 +13,8 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false } #メールアドレスの大文字小文字を区別せずに一意性を検証するため。
   has_many :cards, dependent: :destroy
+
+  def feed
+    Card.where("user_id = ?", id)
+  end
 end

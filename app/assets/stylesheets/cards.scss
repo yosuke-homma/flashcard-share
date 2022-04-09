@@ -1,0 +1,28 @@
+@import "bootstrap";
+
+/* cards */
+
+.cards {
+  list-style: none;
+  padding: 0;
+  li {
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    border: solid;
+  }
+  span {
+    display: block;
+  }
+  .word {
+    border-bottom: 1px solid #fec400;
+  }
+  .word-type {
+    width: fit-content;
+  }
+  .meaning {
+    font-weight: bold;
+  }
+  .timestamp {
+    color: #808080;
+  }
+}

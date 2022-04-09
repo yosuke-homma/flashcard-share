@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get '/about', to: 'prelogin_pages#about'
   get  '/help', to: 'prelogin_pages#help'
   resources :users, only: [:show]
+  resources :cards, only: [:create, :destroy]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

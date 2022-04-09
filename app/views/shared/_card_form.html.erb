@@ -1,0 +1,17 @@
+<%= form_with(model: @card, local: true) do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
+  <div>
+    <p>Make new flashcard</p>
+    <%= f.label :word, "Word" %>
+    <%= f.text_area :word, placeholder: "Write a new word" %>
+    <%= f.label :word_type, "Word type" %>
+    <%= f.select :word_type, [["noun", "noun"], ["verb", "verb"], ["adjective", "adjective"], 
+                              ["adverb", "adverb"], ["pronoun", "pronoun"], ["interjection", "interjection"], 
+                              ["preposition", "preposition"], ["idiom", "idiom"]], include_blank: "Select a word type" %>
+    <%= f.label :meaning, "Meaning" %>
+    <%= f.text_area :meaning %>
+    <%= f.label :example, "Example" %>
+    <%= f.text_area :example %>
+  </div>
+  <%= f.submit "Make new flashcard", class: "btn btn-primary" %>
+<% end %>
