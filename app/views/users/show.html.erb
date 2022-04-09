@@ -1,4 +1,16 @@
-<div class="center">
-  <h1>User Page</h1>
-  <p>Name: <%= @user.name %></p>
+<%= provide(:title, @user.name) %>
+<div>
+  <section>
+    <h1>User Page</h1>
+    <p>Name: <%= @user.name %></p>
+  </section>
+  <div>
+    <% if @user.cards.any? %>
+      <h2>Flashcards (<%= @user.cards.count %>)</h2>
+      <ol class="cards">
+        <%= render @cards %>
+      </ol>
+      <%= will_paginate @cards %>
+    <% end %>
+  </div>
 <div>

@@ -1,0 +1,9 @@
+<li id="card-<%= card.id %>">
+  <h3 class="word"><%= card.word %></h3>
+  <span class="word-type badge bg-primary"><%= card.word_type %></span>
+  <span class="meaning"><%= card.meaning %></span>
+  <span><%= card.example %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(card.created_at) %> ago.
+  </span>
+</li>

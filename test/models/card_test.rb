@@ -4,7 +4,7 @@ class CardTest < ActiveSupport::TestCase
   
   def setup
     @user = users(:one)
-    @card = @user.cards.build(word: "Word", type: "", 
+    @card = @user.cards.build(word: "Word", word_type: "", 
                       meaning: "a single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.",
                       example: "I don't like the word unofficial.",
                       user_id: @user.id)

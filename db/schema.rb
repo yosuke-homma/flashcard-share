@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_23_125241) do
+ActiveRecord::Schema.define(version: 2022_03_27_041306) do
 
   create_table "cards", force: :cascade do |t|
     t.text "word"
-    t.string "type"
+    t.string "word_type"
     t.text "meaning"
     t.text "example"
     t.integer "user_id", null: false

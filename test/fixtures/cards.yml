@@ -2,7 +2,7 @@
 
 one:
   word: MyText
-  type: 
+  word_type: 
   meaning: MyText
   example: MyText
   user: one
@@ -10,7 +10,7 @@ one:
 
 two:
   word: MyText
-  type: 
+  word_type: 
   meaning: MyText
   example: MyText
   user: two
@@ -18,7 +18,7 @@ two:
 
 most_recent:
   word: MyText
-  type: 
+  word_type: 
   meaning: MyText
   example: MyText
   user: two
